@@ -1,0 +1,96 @@
+body {
+  font-size: 1.125em;
+
+  color: #707070;
+  margin: 0;
+}
+
+@media (min-width: 650px) and (orientation: landscape) {
+  body {
+    background: pink;
+  }
+}
+
+@media (min-width: 400px) and (max-width: 649px) {
+  body {
+    background: black;
+  }
+}
+
+/* typography */
+
+h1 {
+  font-size: 3rem;
+
+  color: #212614;
+  text-align: center;
+}
+
+h1 span {
+  color: #b7832f;
+}
+
+h2 {
+  font-size: 1.5rem;
+}
+
+p {
+  margin-top: 0;
+}
+
+/* layout */
+
+img {
+  max-width: 100%;
+  /* here we our image won't exceed the width of 980px */
+}
+
+.container {
+  width: 95%;
+  max-width: 980px;
+  margin: 0 auto;
+}
+
+.columns {
+  display: flex;
+  justify-content: space-between;
+
+  margin: 1rem 0;
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+}
+
+.col-1 {
+  width: 20%;
+}
+
+.col-2 {
+  width: 45%;
+}
+
+.col-3 {
+  width: 70%;
+}
+
+.col-bg {
+  background: #212614;
+  color: #fff;
+  padding: 1em;
+  /* here em will take the reference of the element   */
+}
+
+@media (max-width: 600px) {
+  .columns {
+    flex-direction: column;
+  }
+
+  .col-1,
+  .col-2,
+  .col-3 {
+    width: 100%;
+  }
+}
